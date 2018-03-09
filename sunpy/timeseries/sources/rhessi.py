@@ -113,6 +113,7 @@ class RHESSISummaryTimeSeries(GenericTimeSeries):
         axes.fmt_xdata = matplotlib.dates.DateFormatter('%H:%M')
         figure.autofmt_xdate()
         figure.show()
+        return figure
 
     @classmethod
     def _parse_file(cls, filepath):
